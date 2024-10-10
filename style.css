@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --Primary-dark-magenta: hsl(300, 43%, 22%);
+    --Primary-soft-pink: hsl(333, 80%, 67%);
+    --Neutral-dark-magenta: hsl(303, 10%, 53%);
+    --Neutral-light-magenta: hsl(300, 24%, 96%);
+    --Neutral-white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    height: 100vh;
+
+    font-family: "League Spartan", sans-serif;
+}
+
+main {
+   margin: 6% 10% 0 10%;
+}
+
+.first-section {
+    display: flex;
+    gap: 20%;
+}
+
+.initial-content {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    color: var(--Primary-dark-magenta);
+}
+
+h1 {
+    font-size: 2.7em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.assessment-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.assessment-card{
+    background-color: var(--Neutral-light-magenta);
+    padding: 0% 10%;
+    border-radius: 0.5rem;
+    width: 120%;
+    color: var(--Primary-dark-magenta);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 4%;
+}
+
+.assessment-card-2 {
+    margin-left: 10%;
+}
+
+.assessment-card-3 {
+    margin-left: 20%;
+}
+
+.second-section{
+    display: flex;
+    gap: 2%;
+    margin-top: 4%;
+}
+
+.reviews-card {
+    background-color: var(--Primary-dark-magenta);
+    padding: 3%;
+    border-radius: 0.5rem;
+    color: var(--Neutral-white);
+    height: 30%;
+}
+
+.reviews-card-details-2 {
+    margin-top: 2%;
+}
+
+.reviews-card-details-3 {
+    margin-top: 4%;
+}
+
+
+.reviews-info {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.reviews-img {
+    border-radius: 100%;
+    width: 12%;
+    height: 12%;
+}
+
+.reviews-info-person {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.reviews-info-person p {
+    margin: 2% 0;
+}
+
+#reviews-info-person-details {
+    color: var(--Primary-soft-pink);
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 20% 6%;
+    }
+
+    .first-section {
+        flex-direction: column;
+    }
+
+    .initial-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .assessment-card {
+        flex-direction: column;
+        padding: 2% 10%;
+        width: 80%;
+        align-items: center;
+        gap: 4%;
+        margin-bottom: 4%;
+    }
+
+    .star {
+        margin-top: 4%;
+    }
+
+    .assessment-card-2 {
+        margin-left: 0;
+    }
+    
+    .assessment-card-3 {
+        margin-left: 0;
+    }
+
+    .second-section {
+        flex-direction: column;
+        
+    }
+
+    .reviews-card {
+        padding: 10%;
+        margin-bottom: 4%;
+    }
+
+    .reviews-info {
+        gap: 6%;
+    }
+
+    .reviews-card-details-2 {
+        margin-top: 0;
+    }
+    
+    .reviews-card-details-3 {
+        margin-top: 0;
+    }
+}
+
+
